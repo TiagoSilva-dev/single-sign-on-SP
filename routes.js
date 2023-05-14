@@ -5,8 +5,8 @@ const router = express.Router();
 // Importa o módulo samlify
 const saml = require('./samlify');
 
-// Define a rota '/metadata'
-router.get('/metadata', (req, res) => {
+// Define a rota '/'
+router.get('/', (req, res) => {
   // Define o cabeçalho do tipo de conteúdo da resposta como 'text/xml'
   res.header('Content-Type', 'text/xml');
   // Envia o metadado do service provider como resposta
